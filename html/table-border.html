@@ -21,5 +21,63 @@
      <tr><td>Value 3</td> <td>Value 4</td></tr>
    </tbody>
   </table>
+  <br>
+  <!-- column span -->
+  <table border="1">
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+    <tr>
+      <!-- &nbsp = non-breaking space -->
+      <td colspan="2">&nbsp; &nbsp; Sum: $180</td>
+    </tr>
+  </table>
+ <!-- Row Span  -->
+  <table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Ajay</td>
+        <!-- This cell will take up space on
+            two rows -->
+        <td rowspan="2">24</td>
+    </tr>
+    <tr>
+        <td>Priya</td>
+    </tr>
+
+    <br>
+</table>
+
+<table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+  <tr>
+    <td></td> 
+    <td>Sum: $180</td>
+  </tr>
+</table>
+
 </body>
 </html>
