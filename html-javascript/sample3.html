@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function createTextInput() {
+      let divtag = document.getElementById('input-wrapper');
+      let input = document.createElement('input');
+      input.setAttribute('type', 'date');
+      divtag.appendChild(input);
+    }
+    function createListItems() {
+      let divtag = document.getElementById('input-wrapper');
+      ul = document.createElement('ul');
+      divtag.appendChild(ul);
+      for (let i = 0; i <=10; i++) {
+        let li = document.createElement('li');
+        
+        li.innerHTML = 'list item ' + i;
+        ul.appendChild(li);
+
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="input-wrapper">
+  </div>
+  <button onclick="createTextInput();">My button</button>
+  <button onclick="createListItems();">Create a list item</button>
+</body>
+</html>
