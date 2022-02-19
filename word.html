@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <label for="">Enter a word
+    <input type="text" name="word" id="word">
+  </label>
+  <button onclick="testClick();">TEST</button>
+  <div id="result"></div>
+</body>
+<script>
+  let color = ['red','blue','yellow','green'];
+  let itemNumber = Math.floor(Math.random() * color.length)
+  console.log(color[itemNumber]);
+  function testClick() {
+    let enteredWord = document.getElementById('word').value;
+    let ptag = document.createElement('p');
+    console.log(color[itemNumber]);
+    ptag.innerHTML = 'You entered: ' + enteredWord;
+    document.getElementById('result').appendChild(ptag);
+    if(enteredWord == color[itemNumber]) {
+      let rtag = document.createElement('h1');
+      
+      rtag.innerHTML = 'You are correct';
+      document.getElementById('result').appendChild(rtag);
+    }
+  }
+</script>
+</html>
