@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!-- Label tag and input tag are paired up one is for
+    the input and other is for labeling. These connections
+    are made with a label attribute 
+    for='[name of id on the input tag]'
+-->
+<form action="">
+
+  <fieldset> 
+    <legend>
+      A sample form
+    </legend>
+    <br/><br/>
+    <label for="">
+      Checkbox Inputs 
+      <!-- name attribute should be different ..multiple selection  -->
+      <input type="checkbox" name="unique-value" id="">Checkbox1</input>
+      <input type="checkbox" name="unique-value2" id="">Checkbox2</input>
+    </label>
+    <br/><br/><br/><br/>
+    <label for="">
+      County Select
+      <select name="Country" id="">
+        <option>USA</option>
+        <option>Another country</option>
+      </select>
+    </label>
+    <br/>
+    <br/>
+    <br/>
+    <label for="">Radio Buttons  <br/>
+      <!-- name attribute needs to be the same ..single selection  -->
+      <input type="radio" name="gender" id="">Male</input>
+      <input type="radio" name="gender" id="">Female</input>
+    </label>
+    <br/>
+    <br/>
+    <br/>
+    <label for="">Text Area Input below<br/>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+    </label>
+    <br/><br/>
+    <label for="name">Label Tag</label>
+    <input id="name" type="text"/><br/><br/><br/>
+    <label>
+      Label within input nested
+      <input type="text"/>
+    </label>
+    <br/><br/><br/>
+    <label for="number-input"> Number Input
+      <input type="number" name="" id="number-input"/><br/>
+    </label><br/><br/>
+    <label for="number-input-min-max"> 
+      Number Input with min and max attribute
+      <input min="1" max="5" type="number" name="" id="number-input-min-max"/><br/>
+    </label><br/><br/><br/>
+    <label>
+      Date input type
+      <input type="date" name="date-input" id="date-input">
+    </label><br/><br/><br/>
+    <br/>
+    <label>
+      Enter your email address
+      <input type="email" required name="" id="">
+    </label><br/><br/><br/>
+    <br/>
+    <label for="">
+      Telephone input 
+      <input type="tel" required name="" id="">
+    </label><br/><br/><br/><br/>
+    <b/>
+    <label for="">
+      <!-- May not be able to use  
+        if you're not sure if tag is supported in browsers see
+        caniuse.com for information.
+      -->
+      Url Input type<input type="url" required name="" id="">
+    </label>
+    <br/><br/><br/><br/><br/>
+    <label for="">Color input<input type="color" name="" id=""></label>
+    <br/><br/>
+    <button type="submit">SUbmit </button>
+  </fieldset>
+</form>
+</body>
+</html>
