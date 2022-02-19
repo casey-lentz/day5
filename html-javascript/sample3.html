@@ -7,9 +7,13 @@
   <title>Document</title>
   <script>
     function createTextInput() {
+      // get html element by id attribute.
       let divtag = document.getElementById('input-wrapper');
+      // create a input tag.
       let input = document.createElement('input');
+      // set attributes of input
       input.setAttribute('type', 'date');
+      // place the input in the DOM 
       divtag.appendChild(input);
     }
     function createListItems() {
